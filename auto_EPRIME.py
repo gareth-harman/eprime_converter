@@ -42,7 +42,7 @@ FORMAT_TYPE = parser_results.format_type
 
 # QUICKLY CHECK FORMAT TYPE
 
-if FORMAT_TYPE in ['.csv', 'csv', '.CSV', 'CSV']:
+if FORMAT_TYPE.lower() in '.csv':
     FORMAT_TYPE = '.csv'
 else:
     FORMAT_TYPE = '.txt'
