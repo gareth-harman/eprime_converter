@@ -54,6 +54,7 @@ print('Output Path: {}\n'.format(OUT_DIR))
 #------------------------------------------------------------------------------
 
 # Check EPRIME path
+
 def check_eprime(EPRIME_DIR):
 
     if len(sys.argv) == 1:
@@ -90,7 +91,6 @@ else:
 #------------------------------------------------------------------------------
 
 # Quotes needed for argparse but then remove them
-
 
 if PARENT_DIR != None:
 
@@ -182,4 +182,3 @@ for ii in file_list:
     os.system(CMD + OUT_DIR + 'cmd.txt')
 
 print('\nCOMPLETED EDAT CONVERSION SUCCESSFULLY')
-
